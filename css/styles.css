@@ -1,0 +1,115 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin: 0;
+}
+
+a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+}
+
+#contenedor {
+    background-color: rgb(17, 226, 136);
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-interno {
+    width: 100%; /* 50% - 2% de espacio para separación */
+    height: 80%; /* 80% de la altura del contenedor */
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#encabezado {
+    width: 70%;
+    height: 30%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#subtitulo {
+    width: 70%;
+    height: 30%;
+    text-align: center;
+    font-size: 1em;
+    color: rgb(38, 34, 34);
+    
+}
+
+#boton {
+    position: absolute; /* Posicionamiento absoluto con respecto al div */
+    bottom: 40%;
+    background-color: rgb(17, 238, 17);
+    color: rgb(77, 71, 71);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave de todos los atributos durante 0.3 segundos */
+}
+
+#boton:hover {
+
+    background-color: darkgreen;
+    color: rgb(234, 234, 243)
+    ;
+}
